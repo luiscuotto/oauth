@@ -21,7 +21,7 @@ angular.module('starter.controllers', [])
         $cordovaOauth.google("313606700685-1l3ftm7ps2bhn38q1d7vvqq8o695lldn.apps.googleusercontent.com", ["email"]).then(function(result) {
             // results
             //alert(result);
-            alert(JSON.stringify(result));
+          alert(JSON.stringify(result));
            localStorage.setItem("loginExitoso", result.access_token);
            $location.path("/bienvenido");
         }, function(error) {
