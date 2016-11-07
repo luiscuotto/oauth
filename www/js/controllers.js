@@ -18,6 +18,7 @@ angular.module('starter.controllers', [])
     };
 
     $scope.loginGoogle = function() {
+      alert("loginGoogle");
         $cordovaOauth.google("313606700685-1l3ftm7ps2bhn38q1d7vvqq8o695lldn.apps.googleusercontent.com", ["email"]).then(function(result) {
             // results
             //alert(result);
